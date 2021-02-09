@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Important Methods</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <a href="index.html" id="title">Learn Javascript</a>
+            <ul id="header-nav">
+                <li><a href="Important methods.html">Important Methods</a></li>
+                <li><a href="coditional.html">Coditional</a></li>
+                <li><a href="operators.html">Operators</a></li>
+                <li><a href="loops.html">Loops</a></li>
+                <li><a href="Obj&OOP.html">OOP</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="type-list">
+        <ul>
+            <a href="#Js Funtion" rel="internel">
+                <li>Js Function</li>
+            </a>
+            <a href="#Js Objects" rel="internel">
+                <li>Js Objects</li>
+            </a>
+            <a href="#JS Strings" rel="internel">
+                <li> Js Strings</li>
+            </a>
+            <a href="#Js Numbers" rel="internel">
+                <li>Js Numbers</li>
+            </a>
+            <a href="#Js Arrays" rel="internel">
+                <li>Js Arrays</li>
+            </a>
+        </ul>
+    </div>
+    <!--js function-->
+    <div id="Js Function">
+        <h2>Js Function</h2>
+        <p><strong>Function</strong> one of the fundamental building blocks of Javascript. <br><br>
+            a function is a <b>Javascript methods</b> <br> <br>
+            it is a set of statements that performs a task or products a value. <br> <br>
+            it is executed when it is <b>invoked</b>(callled) by something.
+        </p>
+        <h3 class="sub-tit">function in javascript</h3>
+        <p>function in javascript tools in real life. they make coding easier. <br>
+            instead of writing a blocks of codes over and over again. <br>
+            we can reuse the same code many times.
+        </p>
+        <div class="syntax-ex">
+            <p>kilometer to miles convertion.</p> <br>
+            <span>function toMiles(kilometer){</span> <br>
+            <span>var miles =kilometer *0.62137;</span><br>
+            <span>retrun kilometer + "kilimeter/s"+"equals"+ miles + "miles."</span> <br>
+            <span>}</span> <br>
+            <p>// we can use function many times.</p>
+            <span>alert(miles(3));</span> <br>
+            <span>document.getElementById("demo").innerHTML= toMiles(10)</span>
+        </div>
+        <p><u>Output is</u></p>
+        <div>
+            <img src="/javascript code shots/function2.png" alt="function" class="output-img">
+            <img src="/javascript code shots/function.png" alt="function" class="output-img">
+            <img src="/javascript code shots/function1.png" alt="function" class="output-img"> 
+        </div>
+        <h3 class="sub-tit">Function Defintion</h3>
+        <p>a Javascript function is Defined or declared using the <br> function keyword,following by:</p>
+        <ul>
+            <li>The name of the Function.</li>
+            <li>A list of parameters(optional)enclosed in parantheses(). <br>
+                multiple pramameters are separated by commas(,).</li>
+            <li>The block of codes or the statements enclosed in curly braces{}.</li>
+        </ul>
+        <h3 class="sx">syntax</h3>
+        <div class="syntax">
+            <span>function functionName(parameter1, parameter2){</span> <br> <br>
+            <span>// codes or statements to be executed.</span> <br> <br>
+            <span>}</span>
+        </div>
+        <p>Parameters act as <b>Placeholder variables</b> inside the function. <br> <br>
+            when the function is called, the variables are assigned to the <b>argument</b>(values) provided when <br>
+            the function is called.
+        </p>
+        <div class="syntax-ex">
+            <span>/* defining function*/</span> <br> <br>
+            <span>function writeText(parameter) {</span> <br> <br>
+            <span>document.write(parameter);</span> <br> <br>
+            <span>}</span><br> <br>
+            <span>writeText("pandeeswaran")</span>
+            <br>
+
+            <p><u>Output is</u> <br> <br>
+                pandeeswaran
+            </p>
+        </div>
+        <p class="sp">Sample Program 1</p>
+        <div class="SampleCode">
+            <span>funtion calculate(num1,num2){</span> <br>
+            <span>var sum = num1 + num2 ;</span> <br>
+            <span>document.write(sum);</span><br>
+            <span>}</span> <br>
+            <span>calculate(10,20);</span>
+        </div>
+        <p><u>Output is</u></p>
+        <div>
+            <img src="/javascript code shots/fun ex1.png" alt="function sample Program" class="output-img">
+            <img src="/javascript code shots/fun ex2.png" alt="function sample program" class="output-img">
+        </div>
+        <h3 class="sub-tit">Calling function</h3>
+        <p>Function wil only be executed when they are <b>called </b>or invoked. <br> <br>
+            a function can be called inside a javascript ,program just like previous example. <br> <br>
+
+            a function can be called when an event happens,most commonly <br> when a button is clicked.
+        </p>
+        <p class="sp">Sample Program 2</p>
+        <div class="SampleCode">
+            <span> &lt;p id="demo"&gt;Sum will show here.&lt;/p&gt; </span> <br>
+            <span> &lt;button onclick="addNUm(2,5)"&gt;Add&lt;/button&gt;</span> <br> <br>
+            <span></span> &lt;script&gt; </span> <br>
+            <span></span> function addNUm(num1, num2) { </span> <br>
+            <span> var sum = num1 + num2; </span> <br>
+            <span> document.getElementById("demo").innerHTML = sum; </span> <br>
+            <span> } </span> <br>
+            <span> &lt;/script&gt; </span> <br>
+        </div>
+        <p><u>Output is</u></p>
+        <div>
+            <img src="/javascript code shots/call fun 1.png" alt="call funtion" class="output-img">
+            <img src="/javascript code shots/call fun 2.png" alt="call function" class="output-img">
+            <img src="/javascript code shots/call fun 3.png" alt="call function" class="output-img">
+        </div>
+        <p>please be reminded that functions <b>Don't Require parameters.</b>
+            <br> in this example,the function's only task is to show a dialog box.
+        </p>
+        <p class="sp">Sample program 3</p>
+        <div class="SampleCode">
+            <span>&lt;button onclick="showDialog()" &gt;show Dialog box&lt;/button&gt; </span> <br><br>
+            <span>function showDialog(){</span> <br>
+            <span>alert("hello friends!");</span> <br>
+            <span>}</span>
+        </div>
+        <p><u>Output is</u></p>
+        <div>
+            <img src="/javascript code shots/fun no para1.png" alt="fn no para" class="output-img">
+            <img src="/javascript code shots/fun no para2.png" alt="fn no para" class="output-img">
+            <img src="/javascript code shots/fun no para3.png" alt="fn no para" class="output-img">
+        </div>
+
+        <h3 class="sub-tit">The retrun statement</h3>
+        <p>the <b>return</b> statement is used in a function to stop its execution.<br>
+            and to <b>return</b> a value to the <b>function caller.</b>
+        </p>
+        <div class="syntax-ex">
+            <span>function addNum(num1,num2){</span> <br>
+            <span>var sum = num1 + num 2;</span> <br>
+            <span>return sum;</span> <br>
+            <span>}</span> <br>
+        </div>
+        <p><u>Output is</u></p>
+        <div>
+            <img src="/javascript code shots/fn rn1.png" alt="fn return" class="output-img">
+            <img src="/javascript code shots/fn rn2.png" alt="fn return" class="output-img">
+        </div>
+
+        <p class="sp">example Program 1</p>
+        <div class="SampleCode">
+            <span>function addNum(num1,num2){</span> <br>
+            <span>var sum = num1 + num 2;</span> <br>
+            <span>return sum;</span> <br>
+            <span>}</span><br> <br>
+            <span>// funtion caller</span>
+            <span>document.write(addNum(10,20));</span> <br>
+            <p><u>Output is </u></p>
+            <p>30</p>
+        </div>
+        <p class="sp">Example Program</p>
+        <div class="SampleCode">
+            <span>function getFullName(firstName,lastName){</span> <br>
+            <span>return firstName+" "+lastName;</span> <br>
+            <span>}</span> <br> <br>
+            <span>var fullName=getFullName("Pandi","S")</span> <br>
+            <span>document.write(fullName);</span> <br>
+            <p><u>Output is</u></p>
+            <p>Pandi S</p>
+        </div>
+        <h3 class="sub-tit">Function Scope</h3>
+        <p>variables declared inside a function are called <b>Local variables.</b>
+            <br>local variables is used inside the function where declared. <br>
+            if a local variables is used outside, the value's data type is <b>undefined.</b>
+        </p>
+        <div class="syntax-ex" style="width:41%;">
+            <p>html files</p> <br>
+            <span>&lt;p id="demo"&gt;this is paragraph wiht "demo" id.&lt;/p&gt;</span> <br> <br>
+            <span> &lt;p id="demo1"&gt;this paragraph with "demo1" id. this value is not changed.</span> <br> <br>
+            <span> because fullName variables is placed outside.&lt;/p&gt;</span> <br> <br>
+            <span> &lt;button onclick="mobNum(976543210)"&gt;call function.&lt;/button&gt; </span> <br> <br>
+        </div>
+        <div class="syntax-ex" style="width: 41%;">
+            <p>Javascript Fils</p> <br>
+            <span> &lt;script&gt; </span>
+            <span> function mobNum(num) { </span> <br>
+            <span> var fullName= "Pandeeswaran"; </span> <br> <br>
+            <span> // the fullName variable can be used here </span> <br> <br>
+
+            <span> }</span> <br> <br>
+            <span>//the fullName variable cannot be used here.</span> <br> <br>
+            <span>document.getElementById("demo1").innerHTML=fullName;</span> <br> <br>
+
+            <span> &lt;/script&gt;</span>
+
+        </div>
+        <p><u>Output is</u></p>
+        <div>
+            <img src="/javascript code shots/local variable1.png" alt="local variable" class="output-img">
+            <img src="/javascript code shots/local variable2.png" alt="local variable" class="output-img"> <br> <br>
+            <img src="/javascript code shots/local variable3.png" alt="local variable" class="output-img">
+            <img src="/javascript code shots/local variable4.png" alt="local variable" class="output-img">
+        </div>
+        <h3 class="sub-tit">Global variable</h3>
+        <p><b>global variable</b> can be used by any function. <br>
+            gloabal variables are variables declared outside a function. <br>
+        </p>
+        <p class="sp">Example Program</p>
+        <div class="syntax-ex">
+            <p>html files</p> <br>
+            <span>&lt;p id="demo"&gt;this is paragraph wiht "demo" id.&lt;/p&gt;</span> <br> <br>
+            <span> &lt;button onclick=myfunc()"&gt;call function.&lt;/button&gt; </span> <br> <br>
+            <p>Javascript Fils</p>
+            <span>&lt;script&gt;</span> <br> <br>
+            <span>var bike = "KTM"; </span> <br><br>
+            <span>function myfunc(){</span> <br>
+            <span> document.getElementById("demo").innerHTML=</span> <br>
+            <span>"My favourite bike is"+bike; </span> <br> <br>
+            <span>}</span><br> <br>
+            <span>&lt;/script&gt;</span>
+        </div>
+        <p><u>Output is</u></p>
+        <div>
+            <img src="/javascript code shots/global var1.png" alt="gloabal var" class="output-img">
+            <img src="/javascript code shots/global var2.png" alt="gloabal var" class="output-img">
+            <img src="/javascript code shots/global var3.png" alt="global var" class="output-img">
+        </div>
+
+    </div>
+    <!--js Object-->
+    <div id="Js Objects">
+        <h2>Js Objects</h2>
+    </div>
+    <!--Js Strings-->
+    <div>
+        <h2 id="JS Strings">JS Strings</h2>
+    </div>
+    <!--Js Numbers-->
+    <div id="Js Numbers">
+        <h2>Js Numbers</h2>
+    </div>
+    <!--Js Arrays-->
+    <div id="Js Arrays">
+        <h2>Js Arrays</h2>
+    </div>
+</body>
+
+</html>

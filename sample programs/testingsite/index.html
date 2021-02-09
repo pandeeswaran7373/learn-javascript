@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo">this is paragraph wiht "<b>demo</b>" id.</p>
+    <script>
+        function toMiles(kilometer) {
+            var miles =kilometer * 0.62137;
+            return kilometer + "kilometer/s " +"equals" + miles + "miles.";
+        
+        }
+        //we can use function many times.
+        alert(toMiles(3));
+        document.getElementById("demo").innerHTML=toMiles(10);
+    </script>
+<!-- <button onclick="myfunc()">call function.</button>    
+    <script>
+        var bike="KTM";
+        function myfunc() {           
+            document.getElementById("demo").innerHTML=
+            " My Favourite bike is "+bike;         -->
+        <!-- } -->
+    <!-- </script> -->
+
+
+    <!-- <script src="/sample programs/testingsite/sample.js"></script> -->
+</body>
+
+</html>
