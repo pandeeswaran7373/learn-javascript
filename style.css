@@ -145,6 +145,7 @@ h2{
     margin-top: 15px;
 
 }
+/* syntax example*/
 .type-syntax{
     
     width:450px;
@@ -208,4 +209,26 @@ h2{
 #type-list li{
     color: blue;
 
+}
+
+/*footer */
+
+#footer{
+    background-color:black; 
+    height: 20px;
+    width: 100%;
+    color:white;
+    clear:both;
+}
+#footer{
+    
+background-color:lightblue;
+color:black;
+height: 100px;
+width: 100%;
+border-radius: 20px;
+}
+#footer p{
+    padding: 40px;
+    text-align:center;
 }

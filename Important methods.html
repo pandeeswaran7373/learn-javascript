@@ -67,7 +67,7 @@
         <div>
             <img src="/javascript code shots/function2.png" alt="function" class="output-img">
             <img src="/javascript code shots/function.png" alt="function" class="output-img">
-            <img src="/javascript code shots/function1.png" alt="function" class="output-img"> 
+            <img src="/javascript code shots/function1.png" alt="function" class="output-img">
         </div>
         <h3 class="sub-tit">Function Defintion</h3>
         <p>a Javascript function is Defined or declared using the <br> function keyword,following by:</p>
@@ -251,7 +251,107 @@
     <!--js Object-->
     <div id="Js Objects">
         <h2>Js Objects</h2>
+        <h3 class="sub-tit">What is an Object?</h3>
+        <p>object is a collection of related data and or functionality. <br>
+            creating object an <b>object</b> begins with defining a variable.
+        </p>
+        <div class="type-syntax" style="width: 40%;">
+            <span>var person={</span> <br>
+            <span>fullName: "Pandeeswaran",</span> <br>
+            <span>age: 30,</span> <br>
+            <span>hobbies:["coding" , "read books","listen song"],</span> <br>
+            <span>isEducated:true</span> <br>
+            <span>}</span>
+        </div>
+        <p>you see above syntax of an object is very simple. <br>
+            The person object contains properties and properties are separated by commas(,). <br>
+            the name and value pair are separated by a colon(:).
+        </p>
+        <h3 class="sub-tit">Accessing Object's Properties</h3>
+        <p>two ways to acces an object membeers(properties and methods).</p>
+        <ul>
+            <li>The Dot Notation</li>
+            <li>The Bracket Notation</li>
+        </ul>
+        <h3 class="sub-tit">The Dot Notation</h3>
+        <p>
+            The Dot Notation use a dot(.)to access an objects members. <br>
+            First write the variable,then the name of a property or method.
+        </p>
+        <div class="type-syntax">
+            <span>person.name</span> <br>
+            <span>person.age</span> <br>
+            <span>person.hobbies[0]</span>
+        </div>
+        <p><u>Output is</u></p>
+        <div>
+            <img src="/javascript code shots/obj dot.png" alt="objects dot" class="output-img">
+            <img src="/javascript code shots/obj dot1.png" alt="objects dot" class="output-img">
+        </div>
+        <h3 class="sub-tit">The Bracket Notation</h3>
+        <p>The Bracket Notation use a Square brackets contain the <br>
+            names of the properties.
+        </p>
+        <div class="type-syntax">
+            <span>person["name"];</span> <br>
+            <span>person["age"];</span> <br>
+            <span>person["hobbies"];</span>
+        </div>
+        <p>
+            you notice,the brakets contains the names of the properties.
+        </p>
+        <p><u>Output is</u></p>
+        <div>
+            <img src="/javascript code shots/obj bracket.png" alt="objects bracket" class="output-img">
+            <img src="/javascript code shots/obj dot1.png" alt="objects bracket" class="output-img">
+        </div>
+        <h3 class="sub-tit">The This Keyword</h3>
+        <p>
+            this keyword refers to current object.
+        </p>
+        <div class="type-syntax" style="width: 40%;">
+            <span>var person={</span> <br>
+            <span>name: "pandeeswaran",</span> <br>
+            <span>age: 23,</span> <br>
+            <span>showDetails: function(){</span> <br>
+            <span>alert(this.name + "is" + this.age + "years old.");</span> <br>
+            <span>}</span> <br>
+            <span>};</span>
+        </div>
+        <p><u>Output is</u></p>
+        <div>
+            <img src="/javascript code shots/obj this.png" alt="objects this" class="output-img">
+            <img src="/javascript code shots/obj this 1.png" alt="object this" class="output-img">
+            <img src="/javascript code shots/obj this 2 .png" alt="objects this" class="output-img">
+        </div>
+        <p>
+            above code,this is equivalent to the person object.
+        </p>
+        <h3 class="sub-tit">An Object In An Object</h3>
+        <p>its is possible to put objcts inside an object.</p>
+        <div class="type-syntax">
+            <span>var fruit ={</span> <br>
+            <span>mango:{</span> <br>
+            <span>color: "yellow & ligth green", </span> <br>
+            <span>taste: "sweet & sour</span> <br>
+            <span>},</span> <br>
+            <span>apple: { </span> <br>
+            <span> color: "red", </span> <br>
+            <span>taste: "sweet"</span> <br>
+            <span> }</span> <br>
+            <span>}</span> <br> <br>
+            <span>document.write(fruits.mango.color);</span>
+        </div>
+        <p><u>Output is</u></p>
+        <div>
+            <img src="/javascript code shots/an obj an obj.png" alt="an object an object" class="output-img">
+            <img src="/javascript code shots/an obj an obj1.png" alt="an object an object" class="output-img">
+            <p>we access the color property using <b>fruits.mango.color</b>.</p> 
+        </div>
+
     </div>
+
+
     <!--Js Strings-->
     <div>
         <h2 id="JS Strings">JS Strings</h2>
@@ -263,6 +363,9 @@
     <!--Js Arrays-->
     <div id="Js Arrays">
         <h2>Js Arrays</h2>
+    </div>
+    <div id="footer">
+        <p>Designed by: Pandeeswaran</p>
     </div>
 </body>
 
